@@ -15,7 +15,7 @@ There is no photo and no founder section. The About page and the homepage show a
 |---|---|---|
 | 1.1 | The industry descriptions above | Make sure they are vague enough for you, or simplify them to "automotive manufacturer" and "automotive group" |
 | 1.2 | Mention of an internal AI innovation competition | Keep or remove |
-| 1.3 | The contact email `alioune378@icloud.com` contains part of your name | Switch to a company address when you can |
+| 1.3 | Contact email is now `info@dalaltechnologies.com` | Create this mailbox after buying the domain, or messages sent to it will bounce |
 
 ## 2. Company information  [src/config/site.ts]
 

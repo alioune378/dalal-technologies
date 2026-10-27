@@ -8,7 +8,7 @@ export const site = {
   /** Public URL used for canonical links, sitemap and Open Graph. No trailing slash. */
   url: (typeof process !== 'undefined' && process.env.SITE_URL) || 'https://stupendous-starship-46d64a.netlify.app',
   /** Replace with a company-domain address once one exists (e.g. contact@yourdomain). */
-  email: 'alioune378@icloud.com',
+  email: 'info@dalaltechnologies.com',
   phoneDisplay: '+1 (614) 589-2962',
   phoneHref: '+16145892962',
   location: { en: 'Ithaca, New York, United States', fr: 'Ithaca, New York, États-Unis' },

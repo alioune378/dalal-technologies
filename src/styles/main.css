@@ -1787,11 +1787,12 @@ main:focus {
 }
 .founder-type::before {
   content: '';
-  position: absolute;
-  top: clamp(24px, 4vw, 44px);
-  left: clamp(24px, 4vw, 44px);
-  width: 46%;
+  flex: none;
+  width: min(46%, 220px);
   aspect-ratio: 1;
+  margin-bottom: auto;
+  margin-bottom: auto;
+  min-height: 72px;
   background: linear-gradient(var(--gold-500), var(--gold-500)) 0 100% / 18% 46% no-repeat, linear-gradient(var(--gold-500), var(--gold-500)) 41% 100% / 18% 72% no-repeat, linear-gradient(var(--gold-500), var(--gold-500)) 82% 100% / 18% 100% no-repeat;
   opacity: 0.95;
 }
@@ -1799,10 +1800,17 @@ main:focus {
   display: none;
 }
 .ft-rule {
+  display: none;
   width: 48px;
   height: 2px;
   background: var(--gold-500);
   margin-bottom: 18px;
+}
+.founder-type::before {
+  margin-bottom: 32px !important;
+}
+.founder-type > .ft-name {
+  margin-top: auto;
 }
 .ft-name {
   font-family: var(--display);
@@ -1824,7 +1832,10 @@ main:focus {
   }
   .founder-type {
     aspect-ratio: auto;
-    min-height: 300px;
+    min-height: 0;
+  }
+  .founder-type::before {
+    width: 120px;
   }
 }
 .founder-page {
