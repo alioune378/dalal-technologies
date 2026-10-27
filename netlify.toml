@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Set SITE_URL in the Netlify UI (Site configuration > Environment variables)
+  # to your final domain, e.g. https://www.yourdomain.com
+
+# Clean 404 handling is automatic: Netlify serves dist/404.html.

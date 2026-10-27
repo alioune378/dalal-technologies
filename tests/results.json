@@ -1,0 +1,85 @@
+{
+  "ranAt": "2026-10-27T03:42:31.571Z",
+  "results": [
+    {
+      "name": "Crawl: every internal link resolves (EN + FR)",
+      "ok": true,
+      "detail": "64 pages, 0 broken"
+    },
+    {
+      "name": "No console or runtime errors on any crawled page",
+      "ok": true,
+      "detail": "64 pages"
+    },
+    {
+      "name": "Unique titles and descriptions; FR pages declare lang=\"fr\"",
+      "ok": true,
+      "detail": "64 unique titles"
+    },
+    {
+      "name": "Unknown URL returns the 404 page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Language switcher keeps the same page",
+      "ok": true,
+      "detail": "EN → FR on a service page"
+    },
+    {
+      "name": "Root redirects to remembered language",
+      "ok": true,
+      "detail": "default /fr/, remembered /fr/"
+    },
+    {
+      "name": "Dashboard: filters update KPIs, chart tooltip, data table",
+      "ok": true,
+      "detail": "$15.18M → $3.92M → $670K; table 3 rows"
+    },
+    {
+      "name": "AI workflow: classify → process → human review → outcome",
+      "ok": true,
+      "detail": "support / high → reassigned to operations"
+    },
+    {
+      "name": "Work: status and sector filters, shareable URL",
+      "ok": true,
+      "detail": "all 8, demonstrations 1, real estate 2"
+    },
+    {
+      "name": "Contact form: validation, data notice, successful submission",
+      "ok": true,
+      "detail": "5 errors shown, then sent"
+    },
+    {
+      "name": "Contact links are clickable (mailto / tel)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Embassy demo disclosure is visible on its case study",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile (375px): no horizontal overflow on any page",
+      "ok": true,
+      "detail": "64 pages"
+    },
+    {
+      "name": "Mobile menu opens, closes with Escape, navigates",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Keyboard: skip link and visible focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "SEO files: sitemap, robots, hreflang, Open Graph image",
+      "ok": true,
+      "detail": "64 sitemap URLs"
+    }
+  ]
+}
