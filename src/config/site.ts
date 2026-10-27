@@ -6,7 +6,7 @@
 export const site = {
   name: 'Dalal Technologies',
   /** Public URL used for canonical links, sitemap and Open Graph. No trailing slash. */
-  url: (typeof process !== 'undefined' && process.env.SITE_URL) || 'https://dalal-technologies.netlify.app',
+  url: (typeof process !== 'undefined' && process.env.SITE_URL) || 'https://stupendous-starship-46d64a.netlify.app',
   /** Replace with a company-domain address once one exists (e.g. contact@yourdomain). */
   email: 'alioune378@icloud.com',
   phoneDisplay: '+1 (614) 589-2962',

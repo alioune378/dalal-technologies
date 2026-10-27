@@ -190,6 +190,7 @@ export const projects: Project[] = [
       'Professional website for an affiliated real estate appraisal firm in Dakar. Not a third-party client engagement.',
       'Site professionnel d’un cabinet d’expertise immobilière affilié, à Dakar. Il ne s’agit pas d’un mandat pour un client tiers.',
     ),
+    url: 'https://splendorous-chaja-a84198.netlify.app',
     summary: l(
       'A bilingual professional website for an independent real estate appraisal and valuation firm in Dakar, with a dedicated path for clients living abroad.',
       'Un site professionnel bilingue pour un cabinet indépendant d’expertise et d’évaluation immobilières à Dakar, avec un parcours dédié aux clients vivant à l’étranger.',
@@ -212,7 +213,7 @@ export const projects: Project[] = [
     ],
     tech: l('Static website deployed on Netlify from GitHub.', 'Site statique déployé sur Netlify depuis GitHub.'),
     preview: '/work/cabinet-magaye-sene.jpg',
-    verify: 'Add the live URL in `url` once confirmed.',
+    verify: 'Replace the Netlify address with the custom domain once purchased.',
   },
   {
     slug: 'sant-yalla-boutique',
