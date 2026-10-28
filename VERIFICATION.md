@@ -28,7 +28,7 @@ There is no photo and no founder section. The About page and the homepage show a
 | 2.4b | Markets now read "United States, Canada, Senegal and international" | Done |
 | 2.5 | No registration number, headquarters, employee count, trademark or partnerships are claimed | — | Keep it that way until they exist |
 | 2.6 | About page: "In Wolof, *dalal* carries the idea of welcome…" | Wording written for you | Confirm you're happy with this meaning, or remove it |
-| 2.7 | Relationship between **Dalal Studio** and Dalal Technologies | Not stated on the site. The embassy demo itself still says "Dalal Studio" | Decide whether Dalal Studio becomes a division name |
+| 2.7 | Relationship between **Dalal Studio** and Dalal Technologies | Resolved 28 Oct 2026: the Dalal Studio name is retired. All client sites, including the embassy demo, now credit Dalal Technologies | None |
 
 ## 3. Projects  [src/content/projects.ts]
 
