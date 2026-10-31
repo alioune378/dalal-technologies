@@ -14,7 +14,7 @@ export function Home({ ctx }: { ctx: PageCtx }) {
   const { locale } = ctx;
   const core = services.filter((s) => s.tier === 'core');
   const comp = services.filter((s) => s.tier === 'complementary');
-  const featured = ['senegal-consulaire-digital', 'lintel-meridian-advisory', 'teranga-city'].map((s) => projectBySlug(s)!).filter((p) => p.visible);
+  const featured = ['lintel-meridian-advisory', 'teranga-city', 'cabinet-magaye-sene'].map((s) => projectBySlug(s)!).filter((p) => p.visible);
   return (
     <>
       <section className="hero">

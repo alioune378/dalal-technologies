@@ -18,8 +18,8 @@ const L = (en: string, fr: string) => ({ en, fr });
 const W = {
   title: L('Work and innovation.', 'Réalisations et innovation.'),
   lead: L(
-    'Published projects, functional demonstrations and initiatives in development. Every project states its status and whether it was commissioned, independently developed or an affiliated initiative.',
-    'Projets en ligne, démonstrations fonctionnelles et initiatives en développement. Chaque projet indique son statut et précise s’il a été commandé, développé de façon indépendante ou s’il s’agit d’une initiative affiliée.',
+    'Websites we have designed and published. Every project states its status and whether it was commissioned or an affiliated initiative. New projects are added once they go live.',
+    'Les sites que nous avons conçus et mis en ligne. Chaque projet indique son statut et précise s’il a été commandé ou s’il s’agit d’une initiative affiliée. Les nouveaux projets sont ajoutés dès leur mise en ligne.',
   ),
   challenge: L('The challenge', 'L’enjeu'),
   solution: L('The digital solution', 'La solution numérique'),
@@ -443,7 +443,7 @@ const legal: Record<'privacy' | 'terms', { title: { en: string; fr: string }; up
     en: [
       { h: 'About this website', p: [`This website presents ${site.name} and its services for information only. Nothing on it is an offer, a contract or professional advice for a specific situation.`] },
       { h: 'Demonstrations and synthetic data', p: ['Interactive dashboards, workflows and project demonstrations on this site are illustrative. They use synthetic data, are not connected to live systems and do not represent any real organization’s performance.'] },
-      { h: 'Third parties', p: ['Descriptions of prior professional experience do not name or imply any client or endorsement. Independent demonstrations, such as Sénégal Consulaire Digital, are not commissioned or endorsed by the institutions they concern. Links to external websites are provided for convenience; we are not responsible for their content.'] },
+      { h: 'Third parties', p: ['Descriptions of prior professional experience do not name or imply any client or endorsement. Independent demonstrations are not commissioned or endorsed by the institutions they concern. Links to external websites are provided for convenience; we are not responsible for their content.'] },
       { h: 'Intellectual property', p: [`The content, design and code of this site belong to ${site.name} unless stated otherwise. Typefaces are used under the SIL Open Font License.`] },
       { h: 'Liability', p: ['We take care to keep information accurate but provide it without warranty. To the extent permitted by law, we are not liable for decisions made on the basis of this website.'] },
       { h: 'Contact', p: [`Questions about these terms: ${site.email}.`] },
@@ -451,7 +451,7 @@ const legal: Record<'privacy' | 'terms', { title: { en: string; fr: string }; up
     fr: [
       { h: 'À propos du site', p: [`Ce site présente ${site.name} et ses services à titre informatif. Rien de ce qu’il contient ne constitue une offre, un contrat ou un conseil professionnel adapté à une situation particulière.`] },
       { h: 'Démonstrations et données synthétiques', p: ['Les tableaux de bord, processus et démonstrations présentés sur ce site sont illustratifs. Ils utilisent des données synthétiques, ne sont reliés à aucun système réel et ne représentent la performance d’aucune organisation.'] },
-      { h: 'Tiers', p: ['La description de notre expérience professionnelle antérieure ne désigne et n’implique aucun client ni aucune caution. Les démonstrations indépendantes, comme Sénégal Consulaire Digital, ne sont ni commandées ni approuvées par les institutions concernées. Les liens vers des sites externes sont fournis par commodité ; nous ne sommes pas responsables de leur contenu.'] },
+      { h: 'Tiers', p: ['La description de notre expérience professionnelle antérieure ne désigne et n’implique aucun client ni aucune caution. Les démonstrations indépendantes ne sont ni commandées ni approuvées par les institutions concernées. Les liens vers des sites externes sont fournis par commodité ; nous ne sommes pas responsables de leur contenu.'] },
       { h: 'Propriété intellectuelle', p: [`Les contenus, le design et le code de ce site appartiennent à ${site.name}, sauf mention contraire. Les polices sont utilisées sous licence SIL Open Font License.`] },
       { h: 'Responsabilité', p: ['Nous veillons à l’exactitude des informations, sans toutefois la garantir. Dans les limites permises par la loi, nous ne saurions être tenus responsables des décisions prises sur la base de ce site.'] },
       { h: 'Contact', p: [`Questions sur ces conditions : ${site.email}.`] },

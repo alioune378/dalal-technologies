@@ -144,8 +144,8 @@ export const about = {
   ),
   stageTitle: l('Where we are today', 'Où nous en sommes'),
   stageBody: l(
-    'We are at an early stage, and we say so plainly. Our portfolio combines published websites, functional demonstrations and initiatives in development, each labeled for what it is. Experience gained in prior roles inside large organizations is described separately from the company’s own work.',
-    'Nous sommes à un stade précoce, et nous le disons clairement. Notre portfolio réunit des sites en ligne, des démonstrations fonctionnelles et des initiatives en développement, chacun présenté pour ce qu’il est. L’expérience acquise dans des fonctions antérieures au sein de grandes organisations est décrite séparément des réalisations du cabinet.',
+    'We are at an early stage, and we say so plainly. Our portfolio shows only websites that are live, each labeled for what it is, and grows as new projects launch. Experience gained in prior roles inside large organizations is described separately from the company’s own work.',
+    'Nous sommes à un stade précoce, et nous le disons clairement. Notre portfolio ne présente que des sites en ligne, chacun présenté pour ce qu’il est, et s’enrichit à chaque nouvelle mise en ligne. L’expérience acquise dans des fonctions antérieures au sein de grandes organisations est décrite séparément des réalisations du cabinet.',
   ),
   experienceKicker: l('Our foundation', 'Nos fondations'),
   experienceTitle: l('Fifteen years inside the business before building for it.', 'Quinze ans au cœur des métiers avant de concevoir pour eux.'),

@@ -153,8 +153,8 @@ export const services: Service[] = [
       l('Deployment, training and support plan', 'Un plan de déploiement, de formation et d’accompagnement'),
     ],
     background: l(
-      'Dalal Technologies’ independent work includes a multi-page consular services platform demonstration with a service directory, a guided service finder, simulated request tracking and an operations console, built on a reusable architecture.',
-      'Les travaux indépendants de Dalal Technologies comprennent une démonstration de plateforme de services consulaires : annuaire des démarches, orientation guidée, suivi simulé des demandes et console d’opérations, sur une architecture réutilisable.',
+      'Dalal Technologies’ published work includes multilingual websites with structured request and consultation forms, spam protection and confirmation emails, deployed on Netlify from version-controlled source.',
+      'Les réalisations en ligne de Dalal Technologies comprennent des sites multilingues avec formulaires structurés de demande et de consultation, protection contre le spam et courriels de confirmation, déployés sur Netlify depuis un code source versionné.',
     ),
     related: ['senegal-consulaire-digital', 'o3s'],
   },
@@ -241,8 +241,8 @@ export const services: Service[] = [
       l('A phased plan from information site to online services', 'Un plan progressif, du site d’information aux services en ligne'),
     ],
     background: l(
-      'Sénégal Consulaire Digital is an independent, unofficial demonstration of what a modern consular website could look like. It has not been commissioned or endorsed by any government.',
-      'Sénégal Consulaire Digital est une démonstration indépendante et non officielle de ce que pourrait être un site consulaire moderne. Elle n’a été ni commandée ni approuvée par aucun gouvernement.',
+      'We approach public-sector work with the same task-first, mobile-first and multilingual methods used in our published websites. We have no government client to date, and we will say so plainly in any proposal.',
+      'Nous abordons le secteur public avec les mêmes méthodes que dans nos sites en ligne : une conception centrée sur les démarches, pensée d’abord pour le mobile et multilingue. Nous n’avons pas de client public à ce jour, et nous le disons clairement dans toute proposition.',
     ),
     related: ['senegal-consulaire-digital'],
   },

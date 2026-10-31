@@ -6,6 +6,8 @@ import { ProjectCard } from '../components/ui';
 
 type Filter = 'all' | ProjectCategory;
 const ORDER: ProjectCategory[] = ['published', 'demonstration', 'development'];
+// Only offer status filters that have projects; the control is hidden when there is a single status.
+const usedCats = ORDER.filter((c) => visibleProjects.some((p) => p.category === c));
 
 const T = {
   status: { en: 'Status', fr: 'Statut' },
@@ -32,7 +34,7 @@ export default function WorkFilter({ locale }: { locale: Locale }) {
     const p = new URLSearchParams(window.location.search);
     const c = p.get('status') as Filter | null;
     const s = p.get('sector');
-    if (c && (c === 'all' || ORDER.includes(c as ProjectCategory))) setCat(c);
+    if (c && (c === 'all' || usedCats.includes(c as ProjectCategory))) setCat(c);
     if (s && industries.some((i) => i.slug === s)) setSector(s);
   }, []);
   useEffect(() => {
@@ -49,13 +51,15 @@ export default function WorkFilter({ locale }: { locale: Locale }) {
   return (
     <div className="work-filter">
       <div className="filter-bar">
+        {usedCats.length > 1 && (
         <div className="seg seg-light" role="radiogroup" aria-label={tx(T.status)}>
-          {(['all', ...ORDER] as Filter[]).map((f) => (
+          {(['all', ...usedCats] as Filter[]).map((f) => (
             <button key={f} type="button" role="radio" aria-checked={cat === f} className={cat === f ? 'on' : ''} onClick={() => setCat(f)}>
               {f === 'all' ? tx(T.all) : tx(T.short[f])}
             </button>
           ))}
         </div>
+        )}
         <label className="select-light">
           <span className="sr-only">{tx(T.sector)}</span>
           <select value={sector} onChange={(e) => setSector(e.target.value)}>

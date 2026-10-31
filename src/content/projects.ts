@@ -49,8 +49,8 @@ export const categoryLabel: Record<ProjectCategory, L> = {
 export const projects: Project[] = [
   {
     slug: 'senegal-consulaire-digital',
-    visible: true,
-    featured: true,
+    visible: false, // hidden until confirmed / live
+    featured: false,
     name: 'Sénégal Consulaire Digital',
     sector: l('Government and diplomatic digital services', 'Services numériques diplomatiques et publics'),
     industries: ['government'],
@@ -180,6 +180,7 @@ export const projects: Project[] = [
   {
     slug: 'cabinet-magaye-sene',
     visible: true,
+    featured: true,
     name: 'Cabinet Magaye Sène',
     sector: l('Real estate appraisal and valuation', 'Expertise et évaluation immobilières'),
     industries: ['real-estate'],
@@ -217,7 +218,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'sant-yalla-boutique',
-    visible: true,
+    visible: false, // hidden until confirmed / live
     name: 'Sant Yalla Boutique',
     sector: l('Retail and digital commerce', 'Commerce de détail et vente en ligne'),
     industries: ['retail'],
@@ -246,7 +247,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'sankara-mbaye',
-    visible: true,
+    visible: false, // hidden until confirmed / live
     name: 'Sankara Mbaye',
     sector: l('Creator and media', 'Créateur de contenu et médias'),
     industries: [],
@@ -275,7 +276,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'o3s',
-    visible: true,
+    visible: false, // hidden until confirmed / live
     name: 'O3S',
     sector: l('Energy services, fleet and equipment operations', 'Services énergétiques, flottes et équipements'),
     industries: ['infrastructure'],
@@ -304,7 +305,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'dealer-performance-intelligence',
-    visible: true,
+    visible: false, // hidden until confirmed / live
     name: 'ServiceOps: Dealer Performance Intelligence',
     sector: l('Automotive aftersales analytics', 'Analyse de l’après-vente automobile'),
     industries: ['automotive'],

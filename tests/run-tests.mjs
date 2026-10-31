@@ -138,15 +138,18 @@ await check('AI workflow: classify → process → human review → outcome', as
 await check('Work: status and sector filters, shareable URL', async () => {
   await page.goto(BASE + '/en/work/');
   const all = await page.locator('.project-card').count();
-  await page.getByRole('radio', { name: 'Demonstrations' }).click();
-  const demo = await page.locator('.project-card').count();
-  assert(demo === 1, 'demo count ' + demo);
-  assert(page.url().includes('status=demonstration'), 'url not updated');
+  assert(all === 3, 'expected 3 published projects, got ' + all);
+  // Status filter only appears when more than one status has projects.
+  const radios = await page.getByRole('radio').count();
+  assert(radios === 0, 'empty status filters shown: ' + radios);
+  await page.locator('.select-light select').selectOption('real-estate');
+  await page.waitForFunction(() => location.search.includes('sector=real-estate'), null, { timeout: 3000 }).catch(() => {});
+  assert(page.url().includes('sector=real-estate'), 'url not updated');
   await page.goto(BASE + '/en/work/?sector=real-estate');
   await page.waitForTimeout(300);
   const re = await page.locator('.project-card').count();
   assert(re === 2, 'real estate ' + re);
-  return `all ${all}, demonstrations ${demo}, real estate ${re}`;
+  return `all ${all}, real estate ${re}`;
 });
 
 await check('Contact form: validation, data notice, successful submission', async () => {
@@ -171,11 +174,15 @@ await check('Contact links are clickable (mailto / tel)', async () => {
   assert(await page.locator('a[href^="tel:+1"]').count() > 0, 'no tel');
 });
 
-await check('Embassy demo disclosure is visible on its case study', async () => {
+await check('Hidden projects are not published or mentioned', async () => {
   for (const l of ['en', 'fr']) {
-    await page.goto(`${BASE}/${l}/work/senegal-consulaire-digital/`);
-    const t = await page.locator('.disclosure').textContent();
-    assert(/unofficial|non officielle/.test(t), 'missing disclosure ' + l);
+    const r = await page.goto(`${BASE}/${l}/work/senegal-consulaire-digital/`);
+    assert(r.status() === 404, 'hidden case study still published ' + l);
+    for (const path of ['', 'work/', 'services/', 'legal/']) {
+      await page.goto(`${BASE}/${l}/${path}`);
+      const body = await page.locator('body').textContent();
+      assert(!/Consulaire Digital|Sant Yalla|Sankara|O3S|ServiceOps/.test(body), `hidden project named on /${l}/${path}`);
+    }
   }
 });
 
