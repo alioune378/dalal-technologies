@@ -289,6 +289,7 @@ export const projects: Project[] = [
       'React 19 and TypeScript pre-rendered with esbuild, deployed on Netlify, tested with Playwright.',
       'React 19 et TypeScript pré-rendus avec esbuild, déployés sur Netlify, testés avec Playwright.',
     ),
+    preview: '/work/dalal-technologies.jpg',
   },
   {
     slug: 'sant-yalla-boutique',
