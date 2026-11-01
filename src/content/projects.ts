@@ -219,6 +219,7 @@ export const projects: Project[] = [
   {
     slug: 'fba-consulting-group',
     visible: true,
+    featured: true,
     name: 'FBA Consulting Group',
     sector: l('LinkedIn visibility, personal branding and talent promotion', 'Visibilité LinkedIn, personal branding et mise en valeur des talents'),
     industries: [],
@@ -253,6 +254,47 @@ export const projects: Project[] = [
     tech: l('Static site generated with a Python build script and deployed on Netlify from GitHub.', 'Site statique généré par un script Python et déployé sur Netlify depuis GitHub.'),
     preview: '/work/fba-consulting-group.jpg',
     verify: 'Launched on fba-consultinggroup.com, 1 Nov 2026, after client acceptance.',
+  },
+  {
+    slug: 'thomas-contracting',
+    visible: true,
+    featured: true,
+    name: 'Thomas Contracting & Scrap Removal',
+    sector: l('Contracting, scrap removal and property cleanup', 'Travaux, enlèvement de ferraille et nettoyage de propriétés'),
+    industries: [],
+    category: 'published',
+    status: l('Published', 'En ligne'),
+    ownership: 'commissioned',
+    ownershipNote: l(
+      'Website designed and built for a locally owned contracting and scrap removal business in Lansing, New York.',
+      'Site conçu et réalisé pour une entreprise locale de travaux et d’enlèvement de ferraille à Lansing, dans l’État de New York.',
+    ),
+    url: 'https://thomas-contracting-lansing.com',
+    summary: l(
+      'A mobile-first website for an owner-operated contracting and scrap removal business, built to turn local searches into calls and estimate requests.',
+      'Un site pensé d’abord pour le mobile, pour une entreprise de travaux et d’enlèvement de ferraille gérée par son propriétaire, conçu pour transformer les recherches locales en appels et en demandes de devis.',
+    ),
+    challenge: l(
+      'People looking for scrap or junk removal usually search on a phone and call the first business that looks trustworthy. The owner had no website, so customers had no way to see his services, his service area or how to reach him.',
+      'Les personnes qui cherchent un service d’enlèvement de ferraille ou d’encombrants le font souvent depuis leur téléphone et appellent la première entreprise qui inspire confiance. Le propriétaire n’avait pas de site : ses clients ne pouvaient ni voir ses services, ni sa zone d’intervention, ni comment le joindre.',
+    ),
+    solution: l(
+      'A fast site where calling is always one tap away: a sticky call bar on mobile, a page for each service, a service-area page for Lansing and the greater Ithaca area, and an estimate form that accepts photos of the job. Real photos of the owner, his truck and his trailer show customers who will actually show up.',
+      'Un site rapide où l’appel est toujours à portée de doigt : barre d’appel fixe sur mobile, une page par service, une page dédiée à la zone d’intervention autour de Lansing et d’Ithaca, et un formulaire de devis qui accepte des photos du chantier. De vraies photos du propriétaire, de son camion et de sa remorque montrent aux clients qui viendra réellement.',
+    ),
+    features: [
+      l('Sticky call and estimate bar on mobile', 'Barre d’appel et de devis fixe sur mobile'),
+      l('Six service pages, each pre-rendered for search engines', 'Six pages de services, chacune pré-rendue pour les moteurs de recherche'),
+      l('Estimate form with photo upload and spam protection (Netlify Forms)', 'Formulaire de devis avec envoi de photos et protection anti-spam (Netlify Forms)'),
+      l('Service-area page for Lansing and nearby Tompkins County communities', 'Page de zone d’intervention pour Lansing et les communes voisines du comté de Tompkins'),
+      l('Professional email address on the business domain', 'Adresse e-mail professionnelle sur le domaine de l’entreprise'),
+      l('Local business data (address, phone, area served) for Google', 'Données d’entreprise locale (adresse, téléphone, zone desservie) pour Google'),
+    ],
+    tech: l(
+      'React and TypeScript pre-rendered to static pages with esbuild, deployed on Netlify from GitHub.',
+      'React et TypeScript pré-rendus en pages statiques avec esbuild, déployés sur Netlify depuis GitHub.',
+    ),
+    verify: 'Launched on thomas-contracting-lansing.com, 1 Nov 2026. Add a homepage screenshot to public/work/thomas-contracting.jpg and set preview.',
   },
   {
     slug: 'dalal-technologies',
