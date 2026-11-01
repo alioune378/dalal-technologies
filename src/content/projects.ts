@@ -223,13 +223,13 @@ export const projects: Project[] = [
     sector: l('LinkedIn visibility, personal branding and talent promotion', 'Visibilité LinkedIn, personal branding et mise en valeur des talents'),
     industries: [],
     category: 'published',
-    status: l('Live preview, launch in progress', 'Aperçu en ligne, lancement en cours'),
+    status: l('Published', 'En ligne'),
     ownership: 'commissioned',
     ownershipNote: l(
       'Website designed and built for FBA Consulting Group, a visibility and personal branding firm in Thiès, Senegal.',
       'Site conçu et réalisé pour FBA Consulting Group, cabinet de visibilité et de personal branding basé à Thiès, au Sénégal.',
     ),
-    url: 'https://fba-consulting-group-site.netlify.app',
+    url: 'https://fba-consultinggroup.com',
     summary: l(
       'A French-language website for a Senegalese consultancy that uses its founder’s LinkedIn audience to promote businesses, professional profiles and job seekers.',
       'Un site en français pour un cabinet sénégalais qui s’appuie sur l’audience LinkedIn de sa fondatrice pour promouvoir des entreprises, des profils professionnels et des chercheurs d’emploi.',
@@ -252,7 +252,7 @@ export const projects: Project[] = [
     ],
     tech: l('Static site generated with a Python build script and deployed on Netlify from GitHub.', 'Site statique généré par un script Python et déployé sur Netlify depuis GitHub.'),
     preview: '/work/fba-consulting-group.jpg',
-    verify: 'Confirm ownership type (commissioned vs affiliated) and that the client agrees to be listed. Swap the URL for the custom domain at launch.',
+    verify: 'Launched on fba-consultinggroup.com, 1 Nov 2026, after client acceptance.',
   },
   {
     slug: 'dalal-technologies',
