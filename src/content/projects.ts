@@ -123,6 +123,7 @@ export const projects: Project[] = [
       'Un positionnement net, « des projets présentés avant que la conception ne soit figée », un design éditorial construit autour d’un motif architectural de linteau, des contenus sectoriels rédigés pour le référencement et un parcours de contact unique, en anglais, en français et en arabe.',
     ),
     features: [
+      l('Logo and visual identity designed by Dalal Technologies', 'Logo et identité visuelle conçus par Dalal Technologies'),
       l('Editorial brand presentation with a custom architectural illustration', 'Présentation de marque éditoriale avec une illustration architecturale sur mesure'),
       l('Sector content: EV charging, water and wastewater, waste, thermal energy, building technology', 'Contenus sectoriels : recharge de véhicules électriques, eau et assainissement, déchets, énergie thermique, technologies du bâtiment'),
       l('English, French and Arabic versions', 'Versions anglaise, française et arabe'),
@@ -160,6 +161,7 @@ export const projects: Project[] = [
       'Une page narrative qui présente le concept, les engagements, qui finance et qui décide, ce qui pourrait mal tourner et comment l’éviter, et l’état d’avancement. Une inscription à la consultation remplace tout argumentaire de vente : aucune vente n’est ouverte et aucun paiement n’est demandé.',
     ),
     features: [
+      l('Logo and visual identity designed by Dalal Technologies', 'Logo et identité visuelle conçus par Dalal Technologies'),
       l('Project storytelling with a video presentation', 'Récit du projet avec présentation vidéo'),
       l('Sections on financing, governance and risk', 'Sections consacrées au financement, à la gouvernance et aux risques'),
       l('Transparent project-status section and FAQ', 'Section d’avancement transparente et FAQ'),
@@ -205,6 +207,7 @@ export const projects: Project[] = [
       'Un site sobre et informatif qui présente chaque type d’expertise, le déroulement d’une mission et la manière dont les clients à l’étranger peuvent faire évaluer un bien à distance, avec un formulaire structuré de demande d’expertise.',
     ),
     features: [
+      l('Logo and visual identity designed by Dalal Technologies', 'Logo et identité visuelle conçus par Dalal Technologies'),
       l('French and English versions with a language switch', 'Versions française et anglaise avec sélecteur de langue'),
       l('Appraisal services organized by client situation', 'Services d’expertise organisés selon la situation du client'),
       l('Step-by-step explanation of how an appraisal works', 'Explication pas à pas du déroulement d’une expertise'),
@@ -244,6 +247,7 @@ export const projects: Project[] = [
       'Un site haut de gamme fondé sur des preuves et organisé autour de trois publics : les entreprises, les chercheurs d’emploi et les professionnels qui construisent leur image. Chaque chiffre d’audience est daté et sourcé, les logos clients n’apparaissent qu’avec un accord écrit, et les demandes arrivent par devis, prise de rendez-vous et WhatsApp.',
     ),
     features: [
+      l('Logo and visual identity designed by Dalal Technologies', 'Logo et identité visuelle conçus par Dalal Technologies'),
       l('Three service paths: Businesses & Entrepreneurs, Jobs & Talent, Personal Branding & Influence', 'Trois parcours : Entreprises & Entrepreneurs, Emploi & Talents, Personal Branding & Influence'),
       l('Audience figures shown with their source and date, backed by proof screenshots', 'Chiffres d’audience affichés avec leur source et leur date, appuyés par des captures justificatives'),
       l('Client logos and testimonials published only with authorization', 'Logos clients et témoignages publiés uniquement avec autorisation'),
@@ -283,6 +287,7 @@ export const projects: Project[] = [
       'Un site rapide où l’appel est toujours à portée de doigt : barre d’appel fixe sur mobile, une page par service, une page dédiée à la zone d’intervention autour de Lansing et d’Ithaca, et un formulaire de devis qui accepte des photos du chantier. De vraies photos du propriétaire, de son camion et de sa remorque montrent aux clients qui viendra réellement.',
     ),
     features: [
+      l('Logo and visual identity designed by Dalal Technologies', 'Logo et identité visuelle conçus par Dalal Technologies'),
       l('Sticky call and estimate bar on mobile', 'Barre d’appel et de devis fixe sur mobile'),
       l('Six service pages, each pre-rendered for search engines', 'Six pages de services, chacune pré-rendue pour les moteurs de recherche'),
       l('Estimate form with photo upload and spam protection (Netlify Forms)', 'Formulaire de devis avec envoi de photos et protection anti-spam (Netlify Forms)'),
@@ -294,7 +299,8 @@ export const projects: Project[] = [
       'React and TypeScript pre-rendered to static pages with esbuild, deployed on Netlify from GitHub.',
       'React et TypeScript pré-rendus en pages statiques avec esbuild, déployés sur Netlify depuis GitHub.',
     ),
-    verify: 'Launched on thomas-contracting-lansing.com, 1 Nov 2026. Add a homepage screenshot to public/work/thomas-contracting.jpg and set preview.',
+    preview: '/work/thomas-contracting.jpg',
+    verify: 'Launched on thomas-contracting-lansing.com, 1 Nov 2026.',
   },
   {
     slug: 'dalal-technologies',
@@ -320,6 +326,7 @@ export const projects: Project[] = [
       'Un site rapide et pré-rendu où les compétences se démontrent sur la page même : un tableau de bord qui se recalcule selon les filtres, un flux d’automatisation avec validation humaine et un portfolio qui indique le statut et la nature de chaque projet.',
     ),
     features: [
+      l('Logo and visual identity designed in-house', 'Logo et identité visuelle conçus en interne'),
       l('Full English and French versions with hreflang tags', 'Versions anglaise et française complètes avec balises hreflang'),
       l('Interactive executive dashboard with custom SVG charts (synthetic data)', 'Tableau de bord interactif avec graphiques SVG sur mesure (données synthétiques)'),
       l('In-browser AI workflow demonstration with a human-in-the-loop step', 'Démonstration de flux IA dans le navigateur avec validation humaine'),

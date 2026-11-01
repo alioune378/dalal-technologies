@@ -272,6 +272,7 @@ export const services: Service[] = [
       o('High-performance web applications', 'Applications web performantes'),
       o('Mobile-responsive interfaces', 'Interfaces adaptées au mobile'),
       o('UX/UI design', 'Design UX/UI'),
+      o('Logo and brand identity design', 'Création de logo et d’identité visuelle'),
       o('Website modernization', 'Modernisation de sites'),
       o('Content management', 'Gestion de contenu'),
       o('Search optimization', 'Référencement naturel'),
