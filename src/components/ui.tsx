@@ -107,7 +107,7 @@ export function ExternalLink({ url, label, locale, className = 'btn btn-outline'
   );
 }
 
-export function CtaBand({ locale, title, body }: { locale: Locale; title: string; body: string }) {
+export function CtaBand({ locale, title, body, label }: { locale: Locale; title: string; body: string; label?: string }) {
   return (
     <section className="cta-band">
       <div className="wrap cta-grid">
@@ -115,7 +115,7 @@ export function CtaBand({ locale, title, body }: { locale: Locale; title: string
         <div>
           <p>{body}</p>
           <a className="btn btn-gold" href={href(locale, 'contact')}>
-            {tr(ui.common.startConversation, locale)}
+            {label ?? tr(ui.common.startConversation, locale)}
           </a>
         </div>
       </div>

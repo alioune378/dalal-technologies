@@ -17,6 +17,12 @@ export type Service = {
   background: L;
   related: string[];
   showcase?: 'dashboard' | 'workflow';
+  /** Optional story-led section shown right after the page header. */
+  story?: { title: L; paragraphs: L[]; points: { title: L; body: L }[] };
+  /** Optional service-specific process, shown as numbered steps. */
+  process?: { title: L; lead: L; steps: { title: L; body: L }[] };
+  /** Optional service-specific closing call to action. */
+  cta?: { title: L; body: L; button: L };
 };
 
 const o = (en: string, fr: string, ai?: AiStatus): Offering => ({ label: { en, fr }, ai });
@@ -252,23 +258,111 @@ export const services: Service[] = [
     icon: 'web',
     title: l('Digital Experience & Web Engineering', 'Expérience numérique et ingénierie web'),
     short: l(
-      'Fast, accessible, multilingual websites and web applications that represent an organization with precision.',
-      'Des sites et applications web rapides, accessibles et multilingues qui représentent une organisation avec justesse.',
+      'Story-driven websites that combine broadcast-level storytelling with fast, accessible, multilingual engineering.',
+      'Des sites qui racontent votre histoire, avec le savoir-faire de la télévision et une ingénierie rapide, accessible et multilingue.',
     ),
-    headline: l('A precise first impression, in every language.', 'Une première impression juste, dans chaque langue.'),
+    headline: l('Your work has a story. We build the website that tells it.', 'Votre travail a une histoire. Nous créons le site qui la raconte.'),
     intro: l(
-      'Your website is often the first serious encounter a partner, investor or official has with your organization. We build corporate and institutional sites that load quickly, read clearly on a phone, and are easy to keep up to date.',
-      'Votre site est souvent le premier contact sérieux d’un partenaire, d’un investisseur ou d’un responsable public avec votre organisation. Nous réalisons des sites d’entreprise et institutionnels qui se chargent vite, se lisent bien sur téléphone et se mettent à jour facilement.',
+      'We combine web engineering with twenty years of experience in video broadcasting and live events. The result is a fast, accessible, multilingual website that shows visitors who you are, why you do the work, and why they should choose you.',
+      'Nous allions l’ingénierie web à vingt ans d’expérience en production vidéo, en diffusion et en animation d’événements. Le résultat : un site rapide, accessible et multilingue qui montre à vos visiteurs qui vous êtes, pourquoi vous faites ce travail et pourquoi ils devraient vous choisir.',
     ),
+    story: {
+      title: l('We don’t just build websites. We tell your story.', 'Nous ne faisons pas que des sites. Nous racontons votre histoire.'),
+      paragraphs: [
+        l(
+          'Before Dalal Technologies, our founder spent twenty years in video broadcasting and hosting live events across the United States. That work comes down to one thing: holding an audience’s attention and leaving them with something they remember.',
+          'Avant Dalal Technologies, notre fondateur a passé vingt ans dans la production vidéo, la diffusion et l’animation d’événements partout aux États-Unis. Un métier qui tient en une idée : captiver un public et lui laisser un souvenir.',
+        ),
+        l(
+          'We bring that craft to the web. Most websites list services. Yours should show the people behind the work, the problem you solve and why clients trust you.',
+          'Nous appliquons ce savoir-faire au web. La plupart des sites énumèrent des services. Le vôtre doit montrer les personnes derrière le travail, le problème que vous résolvez et pourquoi vos clients vous font confiance.',
+        ),
+        l('Engineering makes your site fast and reliable. Storytelling makes it yours.', 'L’ingénierie rend votre site rapide et fiable. Le récit le rend unique.'),
+      ],
+      points: [
+        {
+          title: l('We listen first.', 'Nous écoutons d’abord.'),
+          body: l(
+            'Every project starts with your story: how you began, what you are proud of and who you serve.',
+            'Chaque projet commence par votre histoire : vos débuts, ce qui vous rend fier et les personnes que vous servez.',
+          ),
+        },
+        {
+          title: l('We direct, not decorate.', 'Nous réalisons, nous ne décorons pas.'),
+          body: l(
+            'Like a broadcast, every page has a sequence, a pace and a clear message.',
+            'Comme une émission, chaque page a un déroulé, un rythme et un message clair.',
+          ),
+        },
+        {
+          title: l('We build it to last.', 'Nous construisons pour durer.'),
+          body: l(
+            'Fast, accessible, multilingual and easy for your team to update.',
+            'Rapide, accessible, multilingue et facile à mettre à jour par votre équipe.',
+          ),
+        },
+      ],
+    },
+    process: {
+      title: l('From your story to the screen.', 'De votre histoire à l’écran.'),
+      lead: l('A five-step method shaped by broadcast production.', 'Une méthode en cinq étapes, inspirée de la production audiovisuelle.'),
+      steps: [
+        {
+          title: l('Listen', 'Écouter'),
+          body: l(
+            'We sit down with you, as we would before a broadcast, to learn how you started, what drives you and what your best clients say about you.',
+            'Nous prenons le temps de vous rencontrer, comme avant une émission, pour comprendre vos débuts, ce qui vous anime et ce que disent vos meilleurs clients.',
+          ),
+        },
+        {
+          title: l('Find the story', 'Trouver le récit'),
+          body: l(
+            'We shape what we hear into one clear message and the moments that prove it.',
+            'Nous transformons ce que nous entendons en un message clair, appuyé par les moments qui le prouvent.',
+          ),
+        },
+        {
+          title: l('Storyboard', 'Scénariser'),
+          body: l(
+            'We plan the site like a production: the opening scene, the order of pages, and where visuals, video and calls to action belong.',
+            'Nous planifions le site comme une production : la scène d’ouverture, l’enchaînement des pages et la place des visuels, de la vidéo et des appels à l’action.',
+          ),
+        },
+        {
+          title: l('Design and build', 'Concevoir et réaliser'),
+          body: l(
+            'We bring the storyboard to life with engineering that is fast, accessible and multilingual.',
+            'Nous donnons vie au scénario avec une ingénierie rapide, accessible et multilingue.',
+          ),
+        },
+        {
+          title: l('Launch and refine', 'Lancer et affiner'),
+          body: l(
+            'We go live, watch how visitors move through the story, and improve what matters.',
+            'Nous mettons le site en ligne, observons le parcours des visiteurs et améliorons ce qui compte.',
+          ),
+        },
+      ],
+    },
+    cta: {
+      title: l('Every great website starts with a conversation.', 'Tout grand site commence par une conversation.'),
+      body: l(
+        'Tell us how you started, what you do and who you do it for. We will show you how that story can become a website your clients remember.',
+        'Racontez-nous vos débuts, votre métier et les personnes que vous servez. Nous vous montrerons comment cette histoire peut devenir un site dont vos clients se souviendront.',
+      ),
+      button: l('Tell us your story', 'Racontez-nous votre histoire'),
+    },
     challenges: [
-      l('A website that no longer reflects what the organization does', 'Un site qui ne reflète plus l’activité de l’organisation'),
-      l('Poor performance and readability on mobile', 'Des performances et une lisibilité médiocres sur mobile'),
-      l('One language only, for an international audience', 'Une seule langue pour un public international'),
-      l('Content nobody on the team can update', 'Des contenus que personne dans l’équipe ne sait mettre à jour'),
+      l('A website that lists what you do, but not why clients should choose you', 'Un site qui énumère vos services sans dire pourquoi vous choisir'),
+      l('A site that looks like every competitor’s, so visitors forget it', 'Un site qui ressemble à celui de vos concurrents, et que l’on oublie'),
+      l('A website that no longer reflects who you are today', 'Un site qui ne reflète plus qui vous êtes aujourd’hui'),
+      l('Hard to read on a phone, one language only, or impossible for your team to update', 'Peu lisible sur téléphone, dans une seule langue ou impossible à mettre à jour par votre équipe'),
     ],
     offerings: [
-      o('Enterprise corporate websites', 'Sites d’entreprise'),
+      o('Story-driven company websites', 'Sites d’entreprise qui racontent votre histoire'),
       o('Institutional websites', 'Sites institutionnels'),
+      o('Project and development showcases', 'Mise en valeur de projets immobiliers et de développement'),
+      o('Video and visual storytelling', 'Narration visuelle et vidéo'),
       o('High-performance web applications', 'Applications web performantes'),
       o('Mobile-responsive interfaces', 'Interfaces adaptées au mobile'),
       o('UX/UI design', 'Design UX/UI'),
@@ -279,14 +373,14 @@ export const services: Service[] = [
       o('Website maintenance and continuous improvement', 'Maintenance et amélioration continue'),
     ],
     deliverables: [
-      l('Messaging and page structure agreed before design', 'Un message et une arborescence validés avant le design'),
+      l('Your story, messaging and page structure agreed before design', 'Votre histoire, votre message et l’arborescence validés avant le design'),
       l('Professionally written bilingual content', 'Des contenus bilingues rédigés avec soin'),
       l('Accessible, responsive build with search metadata', 'Une réalisation accessible et responsive, avec métadonnées de référencement'),
       l('Hosting set-up and an update routine', 'La mise en ligne et une routine de mise à jour'),
     ],
     background: l(
-      'Published examples include the multilingual websites for Lintel & Meridian Advisory and Teranga City, both affiliated initiatives.',
-      'Parmi les réalisations en ligne figurent les sites multilingues de Lintel & Meridian Advisory et de Teranga City, deux initiatives affiliées.',
+      'Twenty years in video broadcasting and hosting live events across the United States, together with published multilingual websites for Lintel & Meridian Advisory and Teranga City, both affiliated initiatives.',
+      'Vingt ans de production vidéo, de diffusion et d’animation d’événements aux États-Unis, ainsi que les sites multilingues en ligne de Lintel & Meridian Advisory et de Teranga City, deux initiatives affiliées.',
     ),
     related: ['lintel-meridian-advisory', 'teranga-city', 'cabinet-magaye-sene'],
   },
