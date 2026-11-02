@@ -5,7 +5,7 @@ import { categoryLabel, projectBySlug } from '../content/projects';
 import { ui } from '../i18n/ui';
 import { href, Island, tr, type PageCtx } from '../lib/core';
 import { IndustryIcon, ServiceIcon } from '../components/Icons';
-import { CtaBand, PageHead, ProjectCard, ServiceCard } from '../components/ui';
+import { CtaBand, PageHead, ProjectCard, SectionHead, ServiceCard } from '../components/ui';
 import Dashboard from '../islands/Dashboard';
 import Workflow from '../islands/Workflow';
 
@@ -101,6 +101,29 @@ export function ServiceDetail({ ctx, slug }: { ctx: PageCtx; slug: string }) {
         <p className="lead">{tr(s.intro, locale)}</p>
       </PageHead>
 
+      {s.story && (
+        <section className="section why service-story" aria-labelledby="service-story">
+          <div className="wrap why-grid">
+            <div>
+              <h2 id="service-story">{tr(s.story.title, locale)}</h2>
+              {s.story.paragraphs.map((p, i) => (
+                <p key={i} className={i === 0 ? 'lead' : undefined}>
+                  {tr(p, locale)}
+                </p>
+              ))}
+            </div>
+            <ul className="principles">
+              {s.story.points.map((p, i) => (
+                <li key={i}>
+                  <h3>{tr(p.title, locale)}</h3>
+                  <p>{tr(p.body, locale)}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <section className="section tight">
         <div className="wrap split">
           <div>
@@ -142,6 +165,23 @@ export function ServiceDetail({ ctx, slug }: { ctx: PageCtx; slug: string }) {
                 <Workflow locale={locale} />
               </Island>
             )}
+          </div>
+        </section>
+      )}
+
+      {s.process && (
+        <section className="section approach" aria-labelledby="service-process">
+          <div className="wrap">
+            <SectionHead id="service-process" title={tr(s.process.title, locale)} lead={tr(s.process.lead, locale)} />
+            <ol className="steps">
+              {s.process.steps.map((st, i) => (
+                <li key={i}>
+                  <span className="step-n">{i + 1}</span>
+                  <h3>{tr(st.title, locale)}</h3>
+                  <p>{tr(st.body, locale)}</p>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
       )}
@@ -191,7 +231,11 @@ export function ServiceDetail({ ctx, slug }: { ctx: PageCtx; slug: string }) {
           </ul>
         </div>
       </section>
-      <CtaBand locale={locale} title={tr(home.ctaTitle, locale)} body={tr(home.ctaBody, locale)} />
+      {s.cta ? (
+        <CtaBand locale={locale} title={tr(s.cta.title, locale)} body={tr(s.cta.body, locale)} label={tr(s.cta.button, locale)} />
+      ) : (
+        <CtaBand locale={locale} title={tr(home.ctaTitle, locale)} body={tr(home.ctaBody, locale)} />
+      )}
     </>
   );
 }
