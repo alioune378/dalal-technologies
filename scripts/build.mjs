@@ -66,6 +66,15 @@ function doc(r) {
           url: base + '/',
           logo: base + '/brand/logo-primary.png',
           email: site.email,
+          telephone: site.phoneHref,
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: site.address.street,
+            addressLocality: site.address.city,
+            addressRegion: site.address.region,
+            postalCode: site.address.postalCode,
+            addressCountry: site.address.country,
+          },
           areaServed: ['US', 'CA', 'SN'],
           knowsLanguage: ['en', 'fr'],
         })}</script>`

@@ -11,7 +11,9 @@ export const site = {
   email: 'info@dalaltechnologies.com',
   phoneDisplay: '+1 (614) 589-2962',
   phoneHref: '+16145892962',
-  location: { en: 'Ithaca, New York, United States', fr: 'Ithaca, New York, États-Unis' },
+  location: { en: '228 Park Ave S, PMB 473086, New York, NY 10003', fr: '228 Park Ave S, PMB 473086, New York, NY 10003, États-Unis' },
+  /** Mailing address, also given to search engines as structured data. */
+  address: { street: '228 Park Ave S, PMB 473086', city: 'New York', region: 'NY', postalCode: '10003', country: 'US' },
   markets: { en: 'United States, Canada, Senegal and international markets', fr: 'États-Unis, Canada, Sénégal et marchés internationaux' },
   /** Netlify Forms form name. Set to '' to hide the form and show email/phone only. */
   contactFormName: 'contact',

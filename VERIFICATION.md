@@ -23,7 +23,7 @@ There is no photo and no founder section. The About page and the homepage show a
 |---|---|---|---|
 | 2.1 | Email **alioune378@icloud.com** (personal) | From your brief | Replace with a company-domain address once you have one (one-line change) |
 | 2.2 | Phone **+1 (614) 589-2962** | From your brief | Confirm you want it public |
-| 2.3 | Location "**Ithaca, New York**" | From your brief | Confirm the city. No street address is shown |
+| 2.3 | Address "**228 Park Ave S, PMB 473086, New York, NY 10003**" | Owner, 3 Nov 2026 | Confirmed |
 | 2.4 | Site URL is a placeholder: `https://dalal-technologies.netlify.app` | **Decision needed** | Set `SITE_URL` once the domain is chosen |
 | 2.4b | Markets now read "United States, Canada, Senegal and international" | Done |
 | 2.5 | No registration number, headquarters, employee count, trademark or partnerships are claimed | — | Keep it that way until they exist |
