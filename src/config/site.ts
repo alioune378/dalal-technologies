@@ -9,8 +9,8 @@ export const site = {
   url: (typeof process !== 'undefined' && process.env.SITE_URL) || 'https://stupendous-starship-46d64a.netlify.app',
   /** Replace with a company-domain address once one exists (e.g. contact@yourdomain). */
   email: 'info@dalaltechnologies.com',
-  phoneDisplay: '+1 (614) 589-2962',
-  phoneHref: '+16145892962',
+  phoneDisplay: '+1 (718) 912-3441',
+  phoneHref: '+17189123441',
   location: { en: '228 Park Ave S, PMB 473086, New York, NY 10003', fr: '228 Park Ave S, PMB 473086, New York, NY 10003, États-Unis' },
   /** Mailing address, also given to search engines as structured data. */
   address: { street: '228 Park Ave S, PMB 473086', city: 'New York', region: 'NY', postalCode: '10003', country: 'US' },
