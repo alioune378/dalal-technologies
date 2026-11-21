@@ -14,7 +14,7 @@ export function Home({ ctx }: { ctx: PageCtx }) {
   const { locale } = ctx;
   const core = services.filter((s) => s.tier === 'core');
   const comp = services.filter((s) => s.tier === 'complementary');
-  const featured = ['thomas-contracting', 'fba-consulting-group', 'cabinet-magaye-sene'].map((s) => projectBySlug(s)!).filter((p) => p.visible);
+  const featured = ['mai-deluxe', 'fba-consulting-group', 'cabinet-magaye-sene'].map((s) => projectBySlug(s)!).filter((p) => p.visible);
   return (
     <>
       <section className="hero">
